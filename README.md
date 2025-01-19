@@ -100,3 +100,24 @@ src/utils/
 ├── formatDate.js
 ├── debounce.js
 └── validateEmail.js
+
+
+Best Practices
+Jaga Modularitas:
+Simpan file terkait fitur di dalam folder features/ agar kode lebih mudah diatur dan dipahami.
+Gunakan State Management Secara Efisien:
+Gunakan React Context, Redux Toolkit, atau Zustand jika aplikasi membutuhkan pengelolaan state global.
+Penamaan File Konsisten:
+Gunakan PascalCase untuk komponen dan camelCase untuk fungsi atau file helper.
+Contoh:
+Komponen: LoginForm.jsx
+Hook: useFetch.js
+Pisahkan Logika dari UI:
+Letakkan logika bisnis di dalam custom hooks atau services/, bukan langsung di komponen UI.
+Gunakan Environment Variables:
+Simpan konfigurasi seperti URL API di file .env.
+Contoh:
+VITE_API_URL=https://api.example.com
+Testing:
+Buat folder __tests__/ atau gunakan ekstensi .test.js untuk file yang dites.
+Contoh: LoginForm.test.js.
